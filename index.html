@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hundeshop - Startseite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mein Hunde-Online-Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Warenkorb</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <li><button id="logout-btn" style="display: none;">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p id="user-greeting" style="display: none;"></p>
+
+    <main>
+        <h2>Unsere beliebtesten Hundeprodukte</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/hundebett.jpg" alt="Hundebett Deluxe">
+                <h3>Hundebett Deluxe</h3>
+                <p>39,99€</p>
+                <button>In den Warenkorb</button>
+            </div>
+            <div class="product">
+                <img src="images/kauspielzeug.jpg" alt="Kauspielzeug Knochen XXL">
+                <h3>Kauspielzeug „Knochen XXL“</h3>
+                <p>12,99€</p>
+                <button>In den Warenkorb</button>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+        <h2>Warenkorb</h2>
+        <div class="cart-items-aside"></div>
+        <p>Gesamt: <span id="aside-total-price">0€</span></p>
+        <a href="cart.html"><button>Zum Warenkorb</button></a>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Mein Hunde-Online-Shop</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
